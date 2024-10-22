@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('./fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('./fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'italiannoregular';
+    src: url('./fonts/italianno-regular-otf-webfont.woff2') format('woff2'),
+         url('./fonts/italianno-regular-otf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cooper_hewittthin';
+    src: url('./fonts/cooperhewitt-thin-webfont.woff2') format('woff2'),
+         url('./fonts/cooperhewitt-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    margin: 0px;
+    font-family: "open_sansregular";
+    --body-background-color: #885214;
+}
+
+body {
+    margin: 0px;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.flex-container {
+    display: flex;
+}
+
+header {
+    justify-content: center;
+    align-items: flex-end;
+    padding-right:24px
+}
+
+#restaurant-name {
+    margin-right: auto;
+    font-size: 36px;
+    font-family: italiannoregular;
+    padding: 8px 0px 0px 8px;;
+}
+
+/* #header-spacer {
+    margin-left: auto;
+} */
+
+header button {
+    font-size: 20px;
+    border-bottom: none;
+    background-color: var(--body-background-color);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 15px 8px;
+    border: none;
+    background: none;
+}
+
+/* 
+###########
+HOME PAGE 
+########### 
+*/
+
+#home-top-div {
+    position: relative;
+    margin-bottom:0px;
+    height: 795px;
+}
+
+#restaurant-image-home-page {
+    z-index: 0;
+    height: 100%;
+    margin-bottom:0px;
+    margin-top:0px;
+}
+
+#home-page-container #white-box-top {
+    z-index: 1;
+    background-color: rgb(78, 46, 27);
+    opacity: .9;
+    background-image: url("./assets/cardboard-flat.png");
+    position: absolute;
+    height: 795px;
+    width: 25%;
+    top: 0px;
+    bottom: 0px;
+    right: 75vw;
+    margin-bottom:0px;
+    margin-top:0px;
+}
+
+#canadian-delights-p {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 0px 6px 0px 2px;
+}
+
+#home-page-container #restaurant-image-side-div {
+    z-index: 2;
+    position: absolute;
+    top: 200px;
+    left: 1vw;
+    right: 75vw;
+    padding-left: 8px;
+    padding-right: 24px;
+    border-radius: 10px;
+    margin-bottom:0px;
+    margin-top:0px;
+}
+
+#home-bottom-div {
+    position: relative;
+    margin-bottom:0px;
+    height: 795px;
+}
+
+#poutine {
+    z-index: 0;
+    height: 100%;
+    margin-bottom:0px;
+    margin-top:0px;
+}
+
+#home-page-container #white-box-bottom {
+    z-index: 1;
+    background-color: rgb(78, 46, 27);
+    opacity: .9;
+    background-image: url("./assets/cardboard-flat.png");
+    position: absolute;
+    height: 795px;
+    width: 25%;
+    top: 0px;
+    bottom: 0px;
+    left: 75vw;
+    margin-bottom:0px;
+    margin-top:0px;
+}
+
+#poutine-side-div {
+    z-index: 2;
+    position: absolute;
+    top: 200px;
+    right: 1vw;
+    left: 75vw;
+    padding-left: 16px;
+    padding-right: 24px;
+    margin-bottom:0px;
+    margin-top:0px;
+}
+
+#truly-canadian-p {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 2px 8px 2px 2px;
+}
+
+/* 
+###########
+MENU PAGE 
+########### 
+*/
+
+#menu-page-container {
+    background-image: url('./assets/canadian_resaurant-2.png');
+    justify-content: center;
+    padding: 50px 50px 20px 50px;
+    font-family: cooper_hewittthin;
+}
+
+#menu-container {
+
+    background-image: url("./assets/cardboard-flat.png");
+    background-color: rgb(246, 226, 202);
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-bottom: 40px;
+    height: 100%;
+    width: 80%;
+    box-shadow: 1px 2px 8px rgb(41, 38, 34);
+    box-shadow: 2px 4px 16px rgb(41, 38, 34);
+    box-shadow: 2px 6px 24px rgb(41, 38, 34);
+    
+}
+
+  #menu-container h3 {
+    font-size: 26px;
+    margin: 12px;
+    padding: 1px 16px;
+    border-top: 1.2px solid black;
+    border-bottom: 1.2px solid black;
+  }
+
+  #menu-container h6 {
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  #menu-container p {
+    margin: 0px 0px 4px 0px;
+    font-size: 15px;
+  }
+
+  /* 
+###########
+ABOUT PAGE 
+########### 
+*/
+
+#about-container {
+    position: relative;
+}
+
+#about-container img {
+    z-index: 0;
+}
+
+#about-container #white-box {
+    z-index: 1;
+    background-color: white;
+    opacity: .4;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0px;
+    left: 50vw;
+}
+
+#about-container #about-text-div {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    left: 50vw;
+    padding: 16px 50px 16px 50px;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#about-container p  {
+    margin:0px;
+}
